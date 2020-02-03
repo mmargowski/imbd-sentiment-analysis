@@ -36,7 +36,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
-# First half of the reviews in positive, the second half negative
+# First half of the reviews are positive, the second half negative
 target = [1 if i < 12500 else 0 for i in range(25000)]
 
 X_train, X_val, y_train, y_val = train_test_split(X, target, train_size = 0.75)
